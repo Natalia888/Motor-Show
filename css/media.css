@@ -7,7 +7,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+ .ta_right {
+   text-align: left;
+}
+	.top_line a {
+		 font-size: 14px;
+}
 }
 
 /* Small Devices, Tablets */
