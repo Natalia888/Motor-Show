@@ -250,15 +250,7 @@ section h2,
 article h2 {
 	position: relative;
 }
-.s_black h2::before{
-content: "";
-position: absolute;
-width: 60px;
-height: 20px;
-background-image: url(../img/header.png);
-top: 19px;
-margin-left:-68px;
-}
+
 .s_black h2::after{
 content: "";
 position: absolute;
