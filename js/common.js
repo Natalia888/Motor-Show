@@ -16,12 +16,7 @@ $(".mc_toggle").click(function(){
 }
 
 });
-	//Цели для Яндекс.Метрики и Google Analytics
-	$(".count_element").on("click", (function() {
-		ga("send", "event", "goal", "goal");
-		yaCounterXXXXXXXX.reachGoal("goal");
-		return true;
-	}));
+	
 
 	//Stellar - Parallax Plugin
 	//Документация: https://github.com/markdalgleish/stellar.js
