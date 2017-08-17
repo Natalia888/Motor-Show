@@ -49,7 +49,48 @@ header{
 	min-height: 668px;
 	font-family: "BebasBold";
 }
+header a {
+	color: #fff;
+}
+.top_line{
+	min-height: 97px;
+	-webkit-box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+	box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+	width: 100%;
+	background-color: rgba(0,0,0,.6);
+	padding: 22px 0;
+}
+.top_line a {
+	font-size: 21px;
+	border-bottom: #fff dashed 1px;
+	-webkit-transition: all .25s;
+	-o-transition: all 25s;
+	transition: all .25s;
+}
+.top_line a:hover {
+	border-bottom: transparent 1px dashed;
+}
+.top_addr{
+	padding-left: 50px;/*значок и шрифт на одном уровне сверху*/
+	background-image: url(../img/top_map.png);
+	background-repeat: no-repeat; 
+	background-position: left top;
+	line-height: 26px;
+}
+.top_addr strong{
+	color: #d53032;
+	display: block;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 32px;
+}
 
+}
+.top_line .logo {
+	border-bottom: none;
+	position: absolute;
+	margin-top: -18px;
+}
 .top_line .logo:hover {
 	border-bottom: none;
 }
