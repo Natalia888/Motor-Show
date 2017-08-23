@@ -150,7 +150,47 @@ header .button {
 	position: absolute;
 	width: 100%;
 }
+.top_mnu {
+	height: 62px;
+	background-color: #242424;
+	-webkit-box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+	box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+	font-family: "BebasRegular";
+	text-transform: uppercase;
+}
+.top_mnu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.top_mnu a {
+	color: #fff;
+	font-size: 20px;
+	padding: 0 36px 0 55px;
+	display: block;
+	line-height: 62px;
+	border-left: #3B3B3B 1px solid; 
+	background-image: url(../img/top_mnu.png);
+	background-repeat: no-repeat;
+	background-position: 18px 12px; 
+}
+.top_mnu li {
+	float: left;
 
+}
+.top_mnu li.active a,
+.top_mnu li:hover a {
+	background-color: #050505; 
+}
+.top_mnu li:nth-child(2) a {
+	background-position: 20px -72px;
+}
+.top_mnu li:nth-child(3) a {
+	background-position: 28px -163px;
+}
+.top_mnu li:nth-child(4) a {
+	background-position: 20px -256px;	
+}
 .top_mnu li:nth-child(5) a {
 	background-position: 20px -350px;	
 }
