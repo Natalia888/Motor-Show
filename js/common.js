@@ -83,7 +83,40 @@ $(".mc_toggle").click(function(){
 		});
 	};
 
-	
+	//Каруселька
+	//Документация: http://owlgraphic.com/owlcarousel/
+	function carousel_1() {
+		var owl = $(".carousel");
+		owl.owlCarousel({
+			items : 1,
+			loop : true,
+			autoHeight : true,
+			dots : true,
+			singleItem : true
+		});
+		owl.on("mousewheel", ".owl-wrapper", function (e) {
+			if (e.deltaY > 0) {
+				owl.trigger("owl.prev");
+			} else {
+				owl.trigger("owl.next");
+			}
+			e.preventDefault();
+		});
+		$(".next_button").click(function() {
+			owl.trigger("owl.next");
+		});
+		$(".prev_button").click(function() {
+			owl.trigger("owl.prev");
+		});
+		owl.on("resized.owl.carousel", function(event) {
+			var $this = $(this);
+			$this.find(".owl-height").css("height", $this.find(".owl-item.active").height());
+		});
+		setTimeout(function() {
+			owl.find(".owl-height").css("height", owl.find(".owl-item.active").height());
+		}, 5000);
+	};
+	carousel_1();
 
 	//Кнопка "Наверх"
 	//Документация:
